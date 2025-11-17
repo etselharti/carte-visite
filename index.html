@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelaziz EL HARTI - Directeur Général Adjoint | Carte de Visite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 15px 0;
+            font-size: 30px;
+        }
+        
+        .subtitle {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .services {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .services-title {
+            color: #2c3e50;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .service-list {
+            text-align: left;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        .service-item {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-item:before {
+            content: "✓";
+            color: #e74c3c;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .qr-section {
+            background: linear-gradient(135deg, #fff5f5, #ffe0e0);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .qr-title {
+            color: #c0392b;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .qr-code {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .qr-image {
+            display: block;
+            width: 250px;
+            height: 250px;
+        }
+        
+        .contact-info {
+            text-align: left;
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .contact-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            color: #2c3e50;
+            font-size: 15px;
+        }
+        
+        .contact-item span:first-child {
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        .btn-secondary:hover {
+            background: #bdc3c7;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">AE</div>
+        <h1>Abdelaziz EL HARTI</h1>
+        <p class="subtitle">Directeur Général Adjoint</p>
+        
+        <div class="services">
+            <p class="services-title">📋 Étude et Réalisation</p>
+            <div class="service-list">
+                <div class="service-item">Plomberie Professionnelle</div>
+                <div class="service-item">Chauffage Central</div>
+                <div class="service-item">Piscines - Installation & Entretien</div>
+                <div class="service-item">Adduction d'Eau</div>
+                <div class="service-item">Climatisation</div>
+                <div class="service-item">Peinture & Finitions</div>
+                <div class="service-item">Faux Plafonds (F.A.C)</div>
+            </div>
+        </div>
+        
+        <div class="qr-section">
+            <p class="qr-title">📱 Scannez pour enregistrer le contact</p>
+            <div class="qr-code">
+                <!-- QR Code généré avec l'API QR-Server -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AAbdelaziz%20EL%20HARTI%0AORG%3AETS%20MED%20EL%20HARTI%0ATITLE%3AExpert%20Plomberie%20-%20Chauffage%20-%20Climatisation%0ATEL%3BTYPE%3DWORK%3A%2B212522663815%0ATEL%3BTYPE%3DCELL%3A%2B212661491603%0AEMAIL%3Acontact%40etselharti.com%0AADR%3BTYPE%3DWORK%3A%3B%3BRoute%20de%20Zenata%20Lot%20Bio%20N2%20Ain%20Sebaa%3BCasablanca%3B%3B20250%3BMaroc%0ANOTE%3AEtude%20et%20Realisation%20%3A%20Plomberie%2C%20Chauffage%20Central%2C%20Piscines%2C%20Adduction%20d%27Eau%2C%20Climatisation%2C%20Peinture%2C%20F.A.C%0AEND%3AVCARD" 
+                     alt="QR Code - Carte de Visite"
+                     class="qr-image">
+            </div>
+            <p style="color: #666; font-size: 13px;">
+                Compatible avec tous les smartphones
+            </p>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <span>contact@etselharti.com</span>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>05 22 66 38 15</span>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>06 61 49 16 03</span>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>Route de Zenata, Lot Rio N°2 - Aïn Sebaâ</span>
+            </div>
+            <div class="contact-item">
+                <span>🏢</span>
+                <span>Casablanca 20250, Maroc</span>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="downloadVCard()">
+            📥 Télécharger ma carte de visite
+        </button>
+        
+        <a href="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AAbdelaziz%20EL%20HARTI%0AORG%3AETS%20MED%20EL%20HARTI%0ATITLE%3AExpert%20Plomberie%20-%20Chauffage%20-%20Climatisation%0ATEL%3BTYPE%3DWORK%3A%2B212522663815%0ATEL%3BTYPE%3DCELL%3A%2B212661491603%0AEMAIL%3Acontact%40etselharti.com%0AADR%3BTYPE%3DWORK%3A%3B%3BRoute%20de%20Zenata%20Lot%20Bio%20N2%20Ain%20Sebaa%3BCasablanca%3B%3B20250%3BMaroc%0ANOTE%3AEtude%20et%20Realisation%20%3A%20Plomberie%2C%20Chauffage%20Central%2C%20Piscines%2C%20Adduction%20d%27Eau%2C%20Climatisation%2C%20Peinture%2C%20F.A.C%0AEND%3AVCARD" 
+           class="btn btn-secondary" 
+           download="qr-code-elhariti.png">
+            💾 Télécharger le QR Code
+        </a>
+        
+        <div style="margin-top: 25px;">
+            <span class="badge">✓ Devis Gratuit</span>
+            <span class="badge">✓ Intervention 24/7</span>
+            <span class="badge">✓ Garantie</span>
+        </div>
+    </div>
+    
+    <script>
+        // Fonction pour télécharger la vCard
+        function downloadVCard() {
+            const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Abdelaziz EL HARTI
+ORG:ETS MED EL HARTI
+TITLE:Expert Plomberie - Chauffage - Climatisation
+TEL;TYPE=WORK:+212522663815
+TEL;TYPE=CELL:+212661491603
+EMAIL:contact@etselharti.com
+ADR;TYPE=WORK:;;Route de Zenata Lot Bio N°2 Aïn Sebaâ;Casablanca;;20250;Maroc
+NOTE:Étude et Réalisation : Plomberie, Chauffage Central, Piscines, Adduction d'Eau, Climatisation, Peinture, F.A.C
+END:VCARD`;
+
+            const blob = new Blob([vcard], {type: 'text/vcard;charset=utf-8'});
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'abdelaziz-elhariti.vcf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+            
+            alert('✅ Carte de visite téléchargée !');
+        }
+        
+        // Vérifier si le QR code se charge
+        window.onload = function() {
+            const img = document.querySelector('.qr-image');
+            img.onerror = function() {
+                console.log('Erreur de chargement du QR Code - Utilisation d\'une alternative');
+                // Alternative : afficher les infos texte
+                const qrContainer = document.querySelector('.qr-code');
+                qrContainer.innerHTML = `
+                    <div style="padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                        <p style="font-size: 48px; margin-bottom: 10px;">📱</p>
+                        <p style="color: #666; font-size: 14px;">
+                            <strong>Abdelaziz EL HARITI</strong><br>
+                            📱 05 22 86 58 15<br>
+                            📱 06 61 19 16 09<br>
+                            📧 contact@elhariti.ma
+                        </p>
+                    </div>
+                `;
+            };
+        };
+    </script>
+</body>
+</html>
